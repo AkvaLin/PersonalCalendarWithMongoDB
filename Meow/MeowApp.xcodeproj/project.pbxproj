@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F680A5302AF8B92E00403C61 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A52F2AF8B92E00403C61 /* TypeView.swift */; };
+		F680A5322AF8B96A00403C61 /* TypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A5312AF8B96A00403C61 /* TypeViewModel.swift */; };
+		F680A5342AF8BBCE00403C61 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A5332AF8BBCE00403C61 /* EventsView.swift */; };
+		F680A5362AF8BBF100403C61 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A5352AF8BBF100403C61 /* EventsViewModel.swift */; };
+		F680A5382AF8BD2400403C61 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A5372AF8BD2400403C61 /* EventView.swift */; };
+		F680A53C2AF8BEA000403C61 /* EditCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A53B2AF8BEA000403C61 /* EditCalendarView.swift */; };
+		F680A53E2AF8C0B300403C61 /* EditTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A53D2AF8C0B300403C61 /* EditTypeView.swift */; };
+		F680A5402AF8C1C900403C61 /* EditEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680A53F2AF8C1C900403C61 /* EditEventView.swift */; };
+		F683E7292AF7B725001FFE7D /* MeowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7282AF7B725001FFE7D /* MeowApp.swift */; };
+		F683E72B2AF7B725001FFE7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E72A2AF7B725001FFE7D /* ContentView.swift */; };
+		F683E72D2AF7B726001FFE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F683E72C2AF7B726001FFE7D /* Assets.xcassets */; };
+		F683E7302AF7B726001FFE7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F683E72F2AF7B726001FFE7D /* Preview Assets.xcassets */; };
+		F683E7532AF7B8E1001FFE7D /* Meow in Frameworks */ = {isa = PBXBuildFile; productRef = F683E7522AF7B8E1001FFE7D /* Meow */; };
+		F683E7552AF7B8E1001FFE7D /* MongoClient in Frameworks */ = {isa = PBXBuildFile; productRef = F683E7542AF7B8E1001FFE7D /* MongoClient */; };
+		F683E7572AF7B8E1001FFE7D /* MongoCore in Frameworks */ = {isa = PBXBuildFile; productRef = F683E7562AF7B8E1001FFE7D /* MongoCore */; };
+		F683E7592AF7B8E1001FFE7D /* MongoKitten in Frameworks */ = {isa = PBXBuildFile; productRef = F683E7582AF7B8E1001FFE7D /* MongoKitten */; };
+		F683E7612AF7C412001FFE7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7602AF7C412001FFE7D /* LoginView.swift */; };
+		F683E7632AF7C432001FFE7D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7622AF7C432001FFE7D /* LoginViewModel.swift */; };
+		F683E7682AF7C9D4001FFE7D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7672AF7C9D4001FFE7D /* SettingsView.swift */; };
+		F683E76A2AF7CD7C001FFE7D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7692AF7CD7C001FFE7D /* NetworkManager.swift */; };
+		F683E76C2AF7CF61001FFE7D /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E76B2AF7CF61001FFE7D /* UserDefaultsExtensions.swift */; };
+		F683E7712AF7D478001FFE7D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7702AF7D478001FFE7D /* RegisterView.swift */; };
+		F683E7732AF7D4E1001FFE7D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7722AF7D4E1001FFE7D /* RegisterViewModel.swift */; };
+		F683E7752AF7E933001FFE7D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7742AF7E933001FFE7D /* SettingsViewModel.swift */; };
+		F683E7772AF7F8D3001FFE7D /* ChangeLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7762AF7F8D3001FFE7D /* ChangeLoginView.swift */; };
+		F683E7792AF7F8DE001FFE7D /* ChagePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7782AF7F8DE001FFE7D /* ChagePasswordView.swift */; };
+		F683E77C2AF7FD26001FFE7D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E77B2AF7FD26001FFE7D /* CalendarView.swift */; };
+		F683E7872AF7FDEE001FFE7D /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7862AF7FDEE001FFE7D /* EditView.swift */; };
+		F683E7892AF8005D001FFE7D /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7882AF8005D001FFE7D /* EditViewModel.swift */; };
+		F683E78B2AF8069C001FFE7D /* AddCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E78A2AF8069C001FFE7D /* AddCalendarView.swift */; };
+		F683E78D2AF81173001FFE7D /* AddTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E78C2AF81173001FFE7D /* AddTypeView.swift */; };
+		F683E78F2AF81E6D001FFE7D /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E78E2AF81E6D001FFE7D /* EventModel.swift */; };
+		F683E7912AF82941001FFE7D /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7902AF82941001FFE7D /* AddEventView.swift */; };
+		F683E7952AF83871001FFE7D /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7942AF83871001FFE7D /* TypeModel.swift */; };
+		F683E7972AF83EFA001FFE7D /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7962AF83EFA001FFE7D /* CalendarViewModel.swift */; };
+		F683E79A2AF851E3001FFE7D /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683E7992AF851E3001FFE7D /* ItemModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F680A52F2AF8B92E00403C61 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
+		F680A5312AF8B96A00403C61 /* TypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewModel.swift; sourceTree = "<group>"; };
+		F680A5332AF8BBCE00403C61 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		F680A5352AF8BBF100403C61 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		F680A5372AF8BD2400403C61 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		F680A53B2AF8BEA000403C61 /* EditCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCalendarView.swift; sourceTree = "<group>"; };
+		F680A53D2AF8C0B300403C61 /* EditTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTypeView.swift; sourceTree = "<group>"; };
+		F680A53F2AF8C1C900403C61 /* EditEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventView.swift; sourceTree = "<group>"; };
+		F683E7252AF7B725001FFE7D /* MeowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F683E7282AF7B725001FFE7D /* MeowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowApp.swift; sourceTree = "<group>"; };
+		F683E72A2AF7B725001FFE7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F683E72C2AF7B726001FFE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F683E72F2AF7B726001FFE7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F683E7602AF7C412001FFE7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F683E7622AF7C432001FFE7D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F683E7672AF7C9D4001FFE7D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F683E7692AF7CD7C001FFE7D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F683E76B2AF7CF61001FFE7D /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		F683E7702AF7D478001FFE7D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F683E7722AF7D4E1001FFE7D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F683E7742AF7E933001FFE7D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F683E7762AF7F8D3001FFE7D /* ChangeLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLoginView.swift; sourceTree = "<group>"; };
+		F683E7782AF7F8DE001FFE7D /* ChagePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChagePasswordView.swift; sourceTree = "<group>"; };
+		F683E77B2AF7FD26001FFE7D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F683E7862AF7FDEE001FFE7D /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		F683E7882AF8005D001FFE7D /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		F683E78A2AF8069C001FFE7D /* AddCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalendarView.swift; sourceTree = "<group>"; };
+		F683E78C2AF81173001FFE7D /* AddTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTypeView.swift; sourceTree = "<group>"; };
+		F683E78E2AF81E6D001FFE7D /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		F683E7902AF82941001FFE7D /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		F683E7942AF83871001FFE7D /* TypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeModel.swift; sourceTree = "<group>"; };
+		F683E7962AF83EFA001FFE7D /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		F683E7992AF851E3001FFE7D /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F683E7222AF7B725001FFE7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F683E7572AF7B8E1001FFE7D /* MongoCore in Frameworks */,
+				F683E7552AF7B8E1001FFE7D /* MongoClient in Frameworks */,
+				F683E7592AF7B8E1001FFE7D /* MongoKitten in Frameworks */,
+				F683E7532AF7B8E1001FFE7D /* Meow in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F680A5392AF8BE5900403C61 /* AddViews */ = {
+			isa = PBXGroup;
+			children = (
+				F683E78A2AF8069C001FFE7D /* AddCalendarView.swift */,
+				F683E78C2AF81173001FFE7D /* AddTypeView.swift */,
+				F683E7902AF82941001FFE7D /* AddEventView.swift */,
+			);
+			path = AddViews;
+			sourceTree = "<group>";
+		};
+		F680A53A2AF8BE6800403C61 /* EditViews */ = {
+			isa = PBXGroup;
+			children = (
+				F680A53B2AF8BEA000403C61 /* EditCalendarView.swift */,
+				F680A53D2AF8C0B300403C61 /* EditTypeView.swift */,
+				F680A53F2AF8C1C900403C61 /* EditEventView.swift */,
+			);
+			path = EditViews;
+			sourceTree = "<group>";
+		};
+		F683E71C2AF7B725001FFE7D = {
+			isa = PBXGroup;
+			children = (
+				F683E7272AF7B725001FFE7D /* MeowApp */,
+				F683E7262AF7B725001FFE7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F683E7262AF7B725001FFE7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7252AF7B725001FFE7D /* MeowApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F683E7272AF7B725001FFE7D /* MeowApp */ = {
+			isa = PBXGroup;
+			children = (
+				F683E75B2AF7C340001FFE7D /* Application */,
+				F683E75A2AF7C336001FFE7D /* Modules */,
+				F683E76D2AF7CFCC001FFE7D /* Support */,
+				F683E75C2AF7C353001FFE7D /* Resources */,
+				F683E72E2AF7B726001FFE7D /* Preview Content */,
+			);
+			path = MeowApp;
+			sourceTree = "<group>";
+		};
+		F683E72E2AF7B726001FFE7D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F683E72F2AF7B726001FFE7D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F683E75A2AF7C336001FFE7D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F683E77A2AF7FD19001FFE7D /* Calendar */,
+				F683E75D2AF7C3E7001FFE7D /* Login */,
+				F683E7642AF7C9AA001FFE7D /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F683E75B2AF7C340001FFE7D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7282AF7B725001FFE7D /* MeowApp.swift */,
+				F683E72A2AF7B725001FFE7D /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F683E75C2AF7C353001FFE7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F683E72C2AF7B726001FFE7D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F683E75D2AF7C3E7001FFE7D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F683E75F2AF7C3FB001FFE7D /* Views */,
+				F683E75E2AF7C3F6001FFE7D /* ViewModels */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F683E75E2AF7C3F6001FFE7D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7622AF7C432001FFE7D /* LoginViewModel.swift */,
+				F683E7722AF7D4E1001FFE7D /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F683E75F2AF7C3FB001FFE7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7602AF7C412001FFE7D /* LoginView.swift */,
+				F683E7702AF7D478001FFE7D /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F683E7642AF7C9AA001FFE7D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7662AF7C9C8001FFE7D /* Views */,
+				F683E7652AF7C9C3001FFE7D /* ViewModels */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F683E7652AF7C9C3001FFE7D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7742AF7E933001FFE7D /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F683E7662AF7C9C8001FFE7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7672AF7C9D4001FFE7D /* SettingsView.swift */,
+				F683E7762AF7F8D3001FFE7D /* ChangeLoginView.swift */,
+				F683E7782AF7F8DE001FFE7D /* ChagePasswordView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F683E76D2AF7CFCC001FFE7D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7692AF7CD7C001FFE7D /* NetworkManager.swift */,
+				F683E76B2AF7CF61001FFE7D /* UserDefaultsExtensions.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F683E77A2AF7FD19001FFE7D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7822AF7FDC0001FFE7D /* Calendar */,
+				F683E7832AF7FDCA001FFE7D /* EditCalendar */,
+				F683E77D2AF7FD2D001FFE7D /* Models */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		F683E77D2AF7FD2D001FFE7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7942AF83871001FFE7D /* TypeModel.swift */,
+				F683E78E2AF81E6D001FFE7D /* EventModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F683E77E2AF7FD33001FFE7D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7962AF83EFA001FFE7D /* CalendarViewModel.swift */,
+				F680A5312AF8B96A00403C61 /* TypeViewModel.swift */,
+				F680A5352AF8BBF100403C61 /* EventsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F683E77F2AF7FD38001FFE7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F683E77B2AF7FD26001FFE7D /* CalendarView.swift */,
+				F680A52F2AF8B92E00403C61 /* TypeView.swift */,
+				F680A5332AF8BBCE00403C61 /* EventsView.swift */,
+				F680A5372AF8BD2400403C61 /* EventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F683E7822AF7FDC0001FFE7D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F683E77F2AF7FD38001FFE7D /* Views */,
+				F683E77E2AF7FD33001FFE7D /* ViewModels */,
+				F683E7982AF851CF001FFE7D /* Models */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		F683E7832AF7FDCA001FFE7D /* EditCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7852AF7FDDE001FFE7D /* Views */,
+				F683E7842AF7FDD4001FFE7D /* ViewModels */,
+			);
+			path = EditCalendar;
+			sourceTree = "<group>";
+		};
+		F683E7842AF7FDD4001FFE7D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7882AF8005D001FFE7D /* EditViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F683E7852AF7FDDE001FFE7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F680A53A2AF8BE6800403C61 /* EditViews */,
+				F680A5392AF8BE5900403C61 /* AddViews */,
+				F683E7862AF7FDEE001FFE7D /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F683E7982AF851CF001FFE7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F683E7992AF851E3001FFE7D /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F683E7242AF7B725001FFE7D /* MeowApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F683E7332AF7B726001FFE7D /* Build configuration list for PBXNativeTarget "MeowApp" */;
+			buildPhases = (
+				F683E7212AF7B725001FFE7D /* Sources */,
+				F683E7222AF7B725001FFE7D /* Frameworks */,
+				F683E7232AF7B725001FFE7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeowApp;
+			packageProductDependencies = (
+				F683E7522AF7B8E1001FFE7D /* Meow */,
+				F683E7542AF7B8E1001FFE7D /* MongoClient */,
+				F683E7562AF7B8E1001FFE7D /* MongoCore */,
+				F683E7582AF7B8E1001FFE7D /* MongoKitten */,
+			);
+			productName = Meow;
+			productReference = F683E7252AF7B725001FFE7D /* MeowApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F683E71D2AF7B725001FFE7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F683E7242AF7B725001FFE7D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F683E7202AF7B725001FFE7D /* Build configuration list for PBXProject "MeowApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F683E71C2AF7B725001FFE7D;
+			packageReferences = (
+				F683E7512AF7B8E1001FFE7D /* XCRemoteSwiftPackageReference "MongoKitten" */,
+			);
+			productRefGroup = F683E7262AF7B725001FFE7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F683E7242AF7B725001FFE7D /* MeowApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F683E7232AF7B725001FFE7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F683E7302AF7B726001FFE7D /* Preview Assets.xcassets in Resources */,
+				F683E72D2AF7B726001FFE7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F683E7212AF7B725001FFE7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F683E76A2AF7CD7C001FFE7D /* NetworkManager.swift in Sources */,
+				F680A5362AF8BBF100403C61 /* EventsViewModel.swift in Sources */,
+				F683E7892AF8005D001FFE7D /* EditViewModel.swift in Sources */,
+				F683E7682AF7C9D4001FFE7D /* SettingsView.swift in Sources */,
+				F680A5302AF8B92E00403C61 /* TypeView.swift in Sources */,
+				F683E7632AF7C432001FFE7D /* LoginViewModel.swift in Sources */,
+				F683E79A2AF851E3001FFE7D /* ItemModel.swift in Sources */,
+				F683E78D2AF81173001FFE7D /* AddTypeView.swift in Sources */,
+				F680A53C2AF8BEA000403C61 /* EditCalendarView.swift in Sources */,
+				F680A53E2AF8C0B300403C61 /* EditTypeView.swift in Sources */,
+				F683E7612AF7C412001FFE7D /* LoginView.swift in Sources */,
+				F683E7972AF83EFA001FFE7D /* CalendarViewModel.swift in Sources */,
+				F683E76C2AF7CF61001FFE7D /* UserDefaultsExtensions.swift in Sources */,
+				F683E7752AF7E933001FFE7D /* SettingsViewModel.swift in Sources */,
+				F683E77C2AF7FD26001FFE7D /* CalendarView.swift in Sources */,
+				F683E7912AF82941001FFE7D /* AddEventView.swift in Sources */,
+				F683E7712AF7D478001FFE7D /* RegisterView.swift in Sources */,
+				F683E78F2AF81E6D001FFE7D /* EventModel.swift in Sources */,
+				F683E72B2AF7B725001FFE7D /* ContentView.swift in Sources */,
+				F680A5342AF8BBCE00403C61 /* EventsView.swift in Sources */,
+				F683E7872AF7FDEE001FFE7D /* EditView.swift in Sources */,
+				F683E7792AF7F8DE001FFE7D /* ChagePasswordView.swift in Sources */,
+				F683E7732AF7D4E1001FFE7D /* RegisterViewModel.swift in Sources */,
+				F680A5402AF8C1C900403C61 /* EditEventView.swift in Sources */,
+				F680A5382AF8BD2400403C61 /* EventView.swift in Sources */,
+				F683E7292AF7B725001FFE7D /* MeowApp.swift in Sources */,
+				F680A5322AF8B96A00403C61 /* TypeViewModel.swift in Sources */,
+				F683E7952AF83871001FFE7D /* TypeModel.swift in Sources */,
+				F683E78B2AF8069C001FFE7D /* AddCalendarView.swift in Sources */,
+				F683E7772AF7F8D3001FFE7D /* ChangeLoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F683E7312AF7B726001FFE7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F683E7322AF7B726001FFE7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F683E7342AF7B726001FFE7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeowApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5374B32457;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vdc.Meow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F683E7352AF7B726001FFE7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MeowApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5374B32457;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vdc.Meow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F683E7202AF7B725001FFE7D /* Build configuration list for PBXProject "MeowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F683E7312AF7B726001FFE7D /* Debug */,
+				F683E7322AF7B726001FFE7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F683E7332AF7B726001FFE7D /* Build configuration list for PBXNativeTarget "MeowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F683E7342AF7B726001FFE7D /* Debug */,
+				F683E7352AF7B726001FFE7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F683E7512AF7B8E1001FFE7D /* XCRemoteSwiftPackageReference "MongoKitten" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orlandos-nl/MongoKitten";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F683E7522AF7B8E1001FFE7D /* Meow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F683E7512AF7B8E1001FFE7D /* XCRemoteSwiftPackageReference "MongoKitten" */;
+			productName = Meow;
+		};
+		F683E7542AF7B8E1001FFE7D /* MongoClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F683E7512AF7B8E1001FFE7D /* XCRemoteSwiftPackageReference "MongoKitten" */;
+			productName = MongoClient;
+		};
+		F683E7562AF7B8E1001FFE7D /* MongoCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F683E7512AF7B8E1001FFE7D /* XCRemoteSwiftPackageReference "MongoKitten" */;
+			productName = MongoCore;
+		};
+		F683E7582AF7B8E1001FFE7D /* MongoKitten */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F683E7512AF7B8E1001FFE7D /* XCRemoteSwiftPackageReference "MongoKitten" */;
+			productName = MongoKitten;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F683E71D2AF7B725001FFE7D /* Project object */;
+}
